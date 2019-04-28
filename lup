@@ -1,0 +1,5 @@
+#!/bin/bash
+light -A 5
+echo $(light -G) | sed 's/\..*/%🡑/' >> /home/leorr/.junk/ldata
+sleep 0.5
+echo $(light -G) | sed 's/\..*/% /' >> /home/leorr/.junk/ldata
